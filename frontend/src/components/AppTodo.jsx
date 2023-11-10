@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 function AppTodo() {
   return (
     <Container>
-      <Row>
+      <Row className='s-row'>
         <Col sm={6}>
           <input
             type='text'
@@ -16,7 +16,12 @@ function AppTodo() {
           <input type='date' />
         </Col>
         <Col sm={2}>
-          <Button variant='success'>Add</Button>{' '}
+          <Button
+            variant='success'
+            className='s-button'
+          >
+            Add
+          </Button>{' '}
         </Col>
       </Row>
     </Container>
